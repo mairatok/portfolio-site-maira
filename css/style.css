@@ -1,8 +1,12 @@
 @import '../assets/Satoshi-Regular.otf';
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F8F8F8;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
@@ -73,4 +77,149 @@ a.button {
 .button:hover {
     opacity: 0.8;
     text-decoration: none;
+}
+
+/* Layout styling */
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+/* Header styling */
+
+header {
+    background-color: #ffe4c4;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+/* Main styling */
+
+main {
+    padding-top: 168.02px;
+}
+
+/* Work page styling */
+
+#hero {
+    background-color: #ff8686;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center; /* Centers text */
+}
+
+#work {
+    background-color: #ffe4c4;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#work h2 {
+    text-align: center; /* Centers text */
+}
+
+/* About page styling */
+
+#about-h {
+    background-color: #ffa2a2;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#about {
+    background-color: #fafafa;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Deepsleep page styling */
+
+#deepsleep {
+    background-color: #b2d5ff;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Contact styling */
+
+#contact {
+    background-color:#f4f4f4;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center; /* Centers text */
+}
+
+.icon {
+    max-width: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.icon {
+    max-width: 20px;
+}
+
+.copyright {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
 }

@@ -6,31 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- urbanist -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <!-- montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <title>Portfolio Site</title>
 </head>
 <body>
-    <header>
-        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Maira Tokayeva" >
-        <nav>
-            <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header> <!-- header section -->
+        <div class="container">
+            <img src="img/logo_mt/Logo MT.svg" alt="Maira Tokayeva" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <div>
-            <div id="hero">
+        <div id="hero"> <!-- hero section -->
+            <div class="container">
                 <h1>Hello, I am Maira Tokayeva!</h1>
                 <p>I am UI/UX designer with a curious mind and a passion for user-centered design.</p>
             </div>
-            <div id="work">
+        </div>
+        <div id="work"> <!-- work section -->
+            <div class="container">
                 <h2>My Work</h2>
-                <div>
+                <div class="row">
                     <div>
                         <picture>
                             <source srcset="img/deep_sleep/deep_sleep_1x.jpg" media="(max-width:767px)">
@@ -39,35 +49,31 @@
                     </div>
                     <div id="deep-sleep-section">
                         <h3>Deep Sleep</h3>
-                        <p>
-                            Deep Sleep is an online store app where you can buy products for quality rest and sleep.
-                        </p>
+                        <p>Deep Sleep is an online store app where you can buy products for quality rest and sleep.</p>
                         <a href="deepsleep.html" class="button">Read more</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer id="contact">
-        <div>
-            <h2>Do you want to discuss opportunities? Please get in touch!</h2>
+    <footer id="contact"> <!-- footer section -->
+        <div class="container">
+            <h2>Do you want to discuss opportunities?<br>Please get in touch!</h2>
             <p>
                 Email me: <a href="mailto:mairatokay@gmail.com">mairatokay@gmail.com</a> or call: <a href="tel:+971585537761">+971 585537761</a>
             </p>
             <div>
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/tokayeva/" target="_blank">
-                            <img src="linkedin-in.svg" alt="linkedin">
-                        </a>
+                        <a href="https://www.linkedin.com/in/tokayeva/">
+                        <img src="linkedin-in.svg" alt="linkedin" class="icon">Linkedin</a>
                     </li>
                     <li>
-                        <a href="https://www.behance.net/mairatokay" target="_blank">
-                            <img src="behance.svg" alt="behance">
-                        </a>
-                    </li>
+                        <a href="https://www.behance.net/mairatokay">
+                        <img src="behance.svg" alt="behance" class="icon">Behance</a></li>
                 </ul>
             </div>
+            <p class="copyright">Maira Tokayeva 2023</p>
         </div>
     </footer>  
 </body>
