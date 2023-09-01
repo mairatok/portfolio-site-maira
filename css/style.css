@@ -5,40 +5,51 @@
 }
 
 body {
-    background-color: #F8F8F8;
-    font-family: 'Urbanist', sans-serif;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
-    color: #1F1F1F;
-}
-
-h1, h2, h3, h4 {
-    line-height: 1.4;
+    color: #555555;
 }
 
 h1 {
-    font-size: 1.953em;
-    font-weight: 700;
+    font-size: 2.8em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+h2, h3 {
+    line-height: 1.3;
 }
 
 h2 {
-    font-size: 1.563em;
-    font-weight: 700;
+    font-size: 1.35em;
+    font-weight: 500;
+    margin-bottom: 35px;
+    margin-top: 0;
 }
 
 h3 {
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 img {
     width: 100%;
 }
 
+ /* Links styling */
+
 a {
-    color: #787878;
-    text-decoration: underline;
+    color: #c3c3c3;
+    /* text-decoration: underline; */
 }
 
 a:visited {
@@ -48,12 +59,14 @@ a:visited {
 a:hover,
 a:focus {
     color: #46484C;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 a:active { /* selected link */
     color: #959595;
 }
+
+/* Button styling */
 
 .button {
     display: inline-block;
@@ -66,8 +79,9 @@ a:active { /* selected link */
     padding-bottom: 10px;
     border-radius: 3px;
     border-bottom: 2px;
-    transition: 0.2s opacity;  
+    transition: 0.2s opacity;
     text-decoration: none;
+    margin-top: 40px;
 }
 
 a.button {
@@ -79,6 +93,49 @@ a.button {
     text-decoration: none;
 }
 
+#work a.button
+{
+    color: #1C187B;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #f8f8f8;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+#keep-cook-section a.button
+{
+    color: #4F8277;
+}
+
+/* Pull up  */
+#work a.pullUp:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #1C187B;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+#work a.pullUp:hover:before
+{
+    height: 100%;
+}
+
+#keep-cook-section a.pullUp:before
+{
+    background: #4F8277;
+}
+
 /* Layout styling */
 
 .container {
@@ -86,21 +143,28 @@ a.button {
 }
 
 .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    margin: 40px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work {
+    .row{
+        background-color: #f8f8f8;
+    }
 }
 
 /* Header styling */
 
 header {
-    background-color: #ffe4c4;
+    background-color: #fff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .logo {
-    max-width: 50px;
+    max-width: 40px;
 }
 
 nav {
@@ -117,62 +181,118 @@ nav > ul > li {
     display: inline-block;
 }
 
+/* header links */
+
 nav > ul > li > a {
     padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-weight: 500;
     color: #4a4a4a;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
 }
 
 /* Main styling */
 
 main {
-    padding-top: 168.02px;
+    padding-top: 117px;
 }
 
-/* Work page styling */
+/* Home page styling */
 
 #hero {
-    background-color: #ff8686;
-    padding: 20px 0;
+    background-color: #fff;
+    padding: 20px 15px 0 15px;
     display: inline-block;
     width: 100%;
     text-align: center; /* Centers text */
 }
 
 #work {
-    background-color: #ffe4c4;
-    padding: 20px 0;
+    background-color: #fff;
     display: inline-block;
     width: 100%;
+    text-align: center;
 }
 
-#work h2 {
-    text-align: center; /* Centers text */
+.row-project {
+    margin: 25px 0 0 0;
+}
+
+
+.namedeep{
+    color: #1C187B;
+
+}
+
+.namekeep{
+    color: #4F8277;
+    
+}
+
+.svgpicture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#deep-sleep-section {
+    padding: 70px 45px;
+}
+
+#keep-cook-section {
+    padding: 70px 45px;
+}
+
+#backcolor1 {
+    background-color: #F1F1F7;
+}
+
+#backcolor2 {
+    background-color: #EAF2F1;
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
 }
 
 /* About page styling */
 
-#about-h {
+/* #about-h {
     background-color: #ffa2a2;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
     text-align: center;
-}
+} */
 
 #about {
-    background-color: #fafafa;
-    padding: 20px 0;
+    background-color: #fff;
+    padding: 20px 15px;
     display: inline-block;
     width: 100%;
     text-align: center;
 }
 
-#about ul {
+#about h2{
+    margin-bottom: 10px;
+}
+
+#photo {
+    max-width: 300px;
+    text-align: center;
+}
+
+/* #about ul {
     list-style-type: none;
     padding: 0;
-}
+} */
+
 
 /* Deepsleep page styling */
 
@@ -184,18 +304,19 @@ main {
     text-align: center;
 }
 
-/* Contact styling */
+/* Footer styling */
 
 #contact {
-    background-color:#f4f4f4;
-    padding: 20px 0;
+    background-color:#1f1f1f;
+    color: #fff;
+    padding: 100px 15px 10px 15px;
     display: inline-block;
     width: 100%;
     text-align: center; /* Centers text */
 }
 
-.icon {
-    max-width: 20px;
+#contact h2 {
+    padding-bottom: 30px;
 }
 
 #contact ul {
@@ -203,23 +324,193 @@ main {
     padding: 0;
 }
 
+#contact ul > li {
+    display: inline-block;   
+}
+
 #contact ul > li > a {
+    padding: 0 5px; 
+}
+
+#linkedin {
+    padding: 1.45px 0;
+}
+
+#about-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* #contact ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #4a4a4a;
+    color: #fff;
     text-decoration: none;
-}
+} */
 
 .icon {
     max-width: 20px;
 }
 
 .copyright {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #4a4a4a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #c3c3c3;
+    padding-top: 50px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    main {
+        padding-top: 94px;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    #work {
+        text-align: left;
+    }
+
+    #work h2{
+        text-align: center;
+    }
+
+    .work-item {
+        flex-direction: row;
+    }
+
+    #about {
+        text-align: left;
+    }
+
+    #photo {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 70px;
+        float: left;
+        padding: 20px 0 0 30px;
+    }
+
+    nav > ul > li > a {
+        padding: 0 0 0 20px;
+
+    }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    [class*="col-"] {
+        float: left;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row {
+        margin: 20px 0 60px 0; /* 25px top and bottom, 0 left and right */
+    }
+
+    #photo {
+        max-width: 350px;
+    }
+
+    .logo {
+        max-width: 80px;
+        float: left;
+        padding: 20px 0 0 30px;
+    }
+
+    #about p{
+        padding-right: 20px;
+    }
+
+    nav > ul > li > a {
+        padding: 0 0 0 45px;
+
+    }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+    /* #photo { */
+        /* max-width: 400px;
+        text-align: right;
+    } */
+
+    [class*="col-"] {
+        float: left;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .logo {
+        max-width: 60px;
+        /* float: left; */
+        padding: 20px 0 0 0;
+    }
+
+    #about p{
+        padding-right: 30px;
+    }
+
+    .button {
+        margin-top: 50px;
+    }
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="335px" height="170px" viewBox="0 0 335 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <path d="M335,0 L335,40 L285,40 L285,170 L243,170 L243,40 L193,40 L193,0 L335,0 Z" id="Combined-Shape" fill="#555555"></path>
+            <polygon id="line" fill="#FFFFFF" points="175 -1.32560629e-13 220 0 245 170 199 170"></polygon>
+            <path d="M70,-1.13686838e-13 L110,95.6916809 L150,-1.13686838e-13 L195,0 L220,170 L174,170 L160.285,72.849 L117,170 L103,170 L59.715,72.849 L46,170 L0,170 L25,0 L70,-1.13686838e-13 Z" id="M" fill="#555555"></path>
+            <path d="M335,0 L335,40 L285,40 L285,170 L243,170 L243,40 L193,40 L193,0 L335,0 Z" id="Combined-Shape" fill="#555555"></path>
+            <polygon id="line" fill="#FFFFFF" points="175 -1.32560629e-13 220 0 245 170 199 170"></polygon>
+            <path d="M70,-1.13686838e-13 L110,95.6916809 L150,-1.13686838e-13 L195,0 L220,170 L174,170 L160.285,72.849 L117,170 L103,170 L59.715,72.849 L46,170 L0,170 L25,0 L70,-1.13686838e-13 Z" id="M" fill="#555555"></path>
+        </g>
+    </g>
+</svg>
