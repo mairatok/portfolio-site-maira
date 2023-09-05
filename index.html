@@ -18,19 +18,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad40761737.js" crossorigin="anonymous"></script>
     <title>Portfolio Site</title>
 </head>
 <body>
     <header> <!-- header section -->
         <div class="container">
-            <img src="img/logo_mt/Logo.svg" alt="Maira Tokayeva" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <img src="img/logo_mt/Logo.svg" alt="Maira Tokayeva" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="current">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -89,18 +93,21 @@
             <div>
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/tokayeva/">
-                        <img id="linkedin" src="iconlinkedin.svg" alt="linkedin" class="icon"></a>
+                        <a href="https://www.linkedin.com/in/tokayeva/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg txt-light"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.behance.net/mairatokay">
-                        <img src="iconbehance.svg" alt="behance" class="icon"></a>
+                        <a href="https://www.behance.net/mairatokay" target="_blank">
+                            <i class="fab fa-behance fa-lg txt-light"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
             <p class="copyright">Maira Tokayeva 2023</p>
         </div>
     </footer>
-<script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
