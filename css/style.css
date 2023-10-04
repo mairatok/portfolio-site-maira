@@ -12,7 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #555555;
 }
 
@@ -53,6 +53,10 @@ img {
 a {
     color: #c3c3c3;
     /* text-decoration: underline; */
+}
+
+strong {
+    font-weight: bold;
 }
 
 /* a:visited {
@@ -498,6 +502,10 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
     .col-lg-5 {
         width: 41.66%;
     }
@@ -508,6 +516,10 @@ Large devices (1024px or larger)
 
     .col-lg-7 {
         width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
     }
 
     [class*="col-"] {
