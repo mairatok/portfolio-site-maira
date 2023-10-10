@@ -1,140 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- urbanist -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
     <!-- poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ad40761737.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ad40761737.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Deep Sleep Project</title>
-</head>
-<body>
-    <header> <!-- header section -->
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <img src="img/logo_mt/Logo.svg" alt="Maira Tokayeva" class="logo">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+  </head>
+  <body>
+    <header>
+      <!-- header section -->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img src="img/logo_mt/Logo.svg" alt="Maira Tokayeva" class="logo" />
+          <nav>
+            <ul>
+              <li><a href="index.html">work</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="#contact" onclick="menuToggle()">contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main>
-        <div id="deepsleep"> <!-- deepsleep section -->
-            <div class="container">
-                <div>
-                    <h2>Deep Sleep</h2>
-                        <p>
-                            Deep Sleep is an online store app where users can buy products for quality rest and sleep. Objective is to make it easier for people to choose a purchase and make the process quick and enjoyable.
-                        </p>
-                </div>
-                <div>
-                    <h2>Problem statement</h2>
-                        <p>
-                            Users dont have the time or ability to visit physical stores and would rather buy their goods from home. Customers prefer convenient ways to perform various tasks that don’t take much of their time. To solve this problem, I designed a native app to meet the needs of customers.
-                        </p>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_1.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_1.jpg" alt="Deep Sleep 1">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_2.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_2.jpg" alt="Deep Sleep 2">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_3.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_3.jpg" alt="Deep Sleep 3">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_4.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_4.jpg" alt="Deep Sleep 4">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_5.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_5.jpg" alt="Deep Sleep 5">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_6.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_6.jpg" alt="Deep Sleep 6">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_7.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_7.jpg" alt="Deep Sleep 7">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_8.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_8.jpg" alt="Deep Sleep 8">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_9.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_9.jpg" alt="Deep Sleep 9">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/deep_sleep_project_1x/deep_sleep_10.jpg" media="(max-width:767px)">
-                        <img src="img/deep_sleep_project_2x/deep_sleep_10.jpg" alt="Deep Sleep 10">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer id="contact"> <!-- footer section -->
+      <div id="deepsleep">
+        <!-- deepsleep section -->
         <div class="container">
-            <h2>Do you want to discuss opportunities?<br>Please get in touch!</h2>
+          <div>
+            <h2>Deep Sleep</h2>
             <p>
-                Email me: <a href="mailto:mairatokay@gmail.com">mairatokay@gmail.com</a> or call: <a href="tel:+971585537761">+971 585537761</a>
+              Deep Sleep is an online store app where users can buy products for
+              quality rest and sleep. Objective is to make it easier for people
+              to choose a purchase and make the process quick and enjoyable.
             </p>
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/tokayeva/" target="_blank">
-                            <i class="fab fa-linkedin-in fa-lg txt-light"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.behance.net/mairatokay" target="_blank">
-                            <i class="fab fa-behance fa-lg txt-light"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p class="copyright">Maira Tokayeva 2023</p>
+          </div>
+          <div>
+            <h2>Problem statement</h2>
+            <p>
+              Users dont have the time or ability to visit physical stores and
+              would rather buy their goods from home. Customers prefer
+              convenient ways to perform various tasks that don’t take much of
+              their time. To solve this problem, I designed a native app to meet
+              the needs of customers.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_1.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_1.jpg"
+                alt="Deep Sleep 1"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_2.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_2.jpg"
+                alt="Deep Sleep 2"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_3.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_3.jpg"
+                alt="Deep Sleep 3"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_4.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_4.jpg"
+                alt="Deep Sleep 4"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_5.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_5.jpg"
+                alt="Deep Sleep 5"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_6.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_6.jpg"
+                alt="Deep Sleep 6"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_7.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_7.jpg"
+                alt="Deep Sleep 7"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_8.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_8.jpg"
+                alt="Deep Sleep 8"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_9.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_9.jpg"
+                alt="Deep Sleep 9"
+              />
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="img/deep_sleep_project_1x/deep_sleep_10.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/deep_sleep_project_2x/deep_sleep_10.jpg"
+                alt="Deep Sleep 10"
+              />
+            </picture>
+          </div>
         </div>
+      </div>
+    </main>
+    <footer id="contact">
+      <!-- footer section -->
+      <div class="container">
+        <h2>Do you want to discuss opportunities?<br />Please get in touch!</h2>
+        <p>
+          Email me:
+          <a href="mailto:mairatokay@gmail.com">mairatokay@gmail.com</a> or
+          call: <a href="tel:+971585537761">+971 585537761</a>
+        </p>
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/tokayeva/" target="_blank">
+                <i class="fab fa-linkedin-in fa-lg txt-light"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.behance.net/mairatokay" target="_blank">
+                <i class="fab fa-behance fa-lg txt-light"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">Maira Tokayeva 2023</p>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
